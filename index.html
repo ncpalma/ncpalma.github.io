@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -66,10 +66,38 @@
     .social-icons a:hover {
       color: #0077aa;
     }
+
+    .lang { display: none; }
+    .active { display: block; }
+
+    .lang-toggle {
+      text-align: right;
+      margin-bottom: 20px;
+    }
+
+    .lang-toggle button {
+      margin-left: 10px;
+      padding: 6px 12px;
+      font-weight: bold;
+      background-color: #004466;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .lang-toggle button:hover {
+      background-color: #006699;
+    }
   </style>
 </head>
 
 <body>
+
+  <div class="lang-toggle">
+    <button onclick="setLanguage('es')">Español</button>
+    <button onclick="setLanguage('en')">English</button>
+  </div>
 
   <img src="nere_picture.jpeg" alt="Nerea C. Palma" class="profile-img" />
 
@@ -89,20 +117,50 @@
     <a href="teaching.html">Teaching</a>
   </nav>
 
-  <h1>Nerea C. Palma</h1>
+  <!-- Español -->
+  <div class="lang lang-es active">
+    <h1>Nerea C. Palma</h1>
 
-  <h2>About Me</h2>
-  <p>I hold a Ph.D. in Political Science from <strong>Pontificia Universidad Católica de Chile</strong>, and I am currently a postdoctoral researcher at <strong>COES – Centro de Estudios de Conflicto y Cohesión Social</strong>. My research focuses on electoral behavior, institutional reforms, and political disaffection, particularly in the Chilean context.</p>
+    <h2>Sobre mí</h2>
+    <p>Soy doctora en Ciencia Política por la <strong>Pontificia Universidad Católica de Chile</strong>, e investigadora postdoctoral en el <strong>COES – Centro de Estudios de Conflicto y Cohesión Social</strong>. Mi investigación se enfoca en el comportamiento electoral, reformas institucionales y desafección política, especialmente en el contexto chileno.</p>
 
-  <p>My doctoral dissertation, titled <em>“Democratic Evolution in Chile: Electoral Reforms, Voter Behavior, and Democratic Satisfaction”</em>, is composed of three articles:</p>
+    <p>Mi tesis doctoral, titulada <em>“Democratic Evolution in Chile: Electoral Reforms, Voter Behavior, and Democratic Satisfaction”</em>, se compone de tres artículos:</p>
 
-  <ul>
-    <li><strong>Article 1:</strong> Investigates how voting for the winning option in the 2020 Chilean plebiscite affected satisfaction with democracy. Using panel data and a difference-in-differences approach, it shows that winning increased satisfaction in both the short and long term.</li>
-    <li><strong>Article 2:</strong> Analyzes the role of political disaffection and disinterest in voting for outsider candidates in Chile’s 2021 presidential election. It finds that Gabriel Boric, a reformist outsider, attracted disaffected voters more than his populist counterparts.</li>
-    <li><strong>Article 3:</strong> Examines the impact of electoral reform and increased district magnitude on voter turnout. The study reveals a U-shaped effect: turnout declined in formerly competitive districts and increased in previously less competitive ones.</li>
-  </ul>
+    <ul>
+      <li><strong>Artículo 1:</strong> Estudia cómo votar por la opción ganadora en el plebiscito chileno de 2020 afectó la satisfacción con la democracia. Utilizando datos de panel y un enfoque de diferencias-en-diferencias, muestra que ganar aumentó la satisfacción tanto a corto como a largo plazo.</li>
+      <li><strong>Artículo 2:</strong> Analiza el papel de la desafección política en el voto por candidatos outsiders en la elección presidencial de 2021. Encuentra que Gabriel Boric, un outsider reformista, atrajo a votantes descontentos más que sus contrapartes populistas.</li>
+      <li><strong>Artículo 3:</strong> Examina el impacto de la reforma electoral y el aumento de la magnitud distrital sobre la participación electoral. El estudio revela un efecto en forma de U: la participación disminuyó en distritos anteriormente competitivos y aumentó en los menos competitivos.</li>
+    </ul>
 
-  <p>My research explores how institutional and social changes influence electoral participation, voter satisfaction, and democratic legitimacy. I use a mix of quantitative methods, including panel data analysis, difference-in-differences designs, and multinomial logistic regression models applied to original and secondary survey data such as <em>ELSOC</em>.</p>
+    <p>Mi investigación explora cómo los cambios institucionales y sociales influyen en la participación electoral, la satisfacción con la democracia y la legitimidad democrática. Utilizo métodos cuantitativos como análisis de datos de panel, diseños de diferencias-en-diferencias y modelos de regresión logística multinomial aplicados a encuestas originales y secundarias como <em>ELSOC</em>.</p>
+  </div>
+
+  <!-- English -->
+  <div class="lang lang-en">
+    <h1>Nerea C. Palma</h1>
+
+    <h2>About Me</h2>
+    <p>I hold a Ph.D. in Political Science from <strong>Pontificia Universidad Católica de Chile</strong>, and I am currently a postdoctoral researcher at <strong>COES – Center for Social Conflict and Cohesion Studies</strong>. My research focuses on electoral behavior, institutional reforms, and political disaffection, particularly in the Chilean context.</p>
+
+    <p>My doctoral dissertation, titled <em>“Democratic Evolution in Chile: Electoral Reforms, Voter Behavior, and Democratic Satisfaction”</em>, is composed of three articles:</p>
+
+    <ul>
+      <li><strong>Article 1:</strong> Investigates how voting for the winning option in the 2020 Chilean plebiscite affected satisfaction with democracy. Using panel data and a difference-in-differences approach, it shows that winning increased satisfaction in both the short and long term.</li>
+      <li><strong>Article 2:</strong> Analyzes the role of political disaffection and disinterest in voting for outsider candidates in Chile’s 2021 presidential election. It finds that Gabriel Boric, a reformist outsider, attracted disaffected voters more than his populist counterparts.</li>
+      <li><strong>Article 3:</strong> Examines the impact of electoral reform and increased district magnitude on voter turnout. The study reveals a U-shaped effect: turnout declined in formerly competitive districts and increased in previously less competitive ones.</li>
+    </ul>
+
+    <p>My research explores how institutional and social changes influence electoral participation, voter satisfaction, and democratic legitimacy. I use a mix of quantitative methods, including panel data analysis, difference-in-differences designs, and multinomial logistic regression models applied to original and secondary survey data such as <em>ELSOC</em>.</p>
+  </div>
+
+  <script>
+    function setLanguage(lang) {
+      document.querySelectorAll('.lang').forEach(div => {
+        div.classList.remove('active');
+      });
+      document.querySelector('.lang-' + lang).classList.add('active');
+    }
+  </script>
 
 </body>
 </html>
