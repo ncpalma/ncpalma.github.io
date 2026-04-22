@@ -1,13 +1,10 @@
 ---
-title: "Paper Title Number 4"
+title: "Epílogo"
 collection: publications
-category: conferences
-permalink: /publication/2024-02-17-paper-title-number-4
-excerpt: 'This paper is about fixing template issue #693.'
-date: 2024-02-17
-venue: 'GitHub Journal of Bugs'
-paperurl: 'https://academicpages.github.io/files/paper3.pdf'
-citation: 'Your Name, You. (2024). &quot;Paper Title Number 3.&quot; <i>GitHub Journal of Bugs</i>. 1(3).'
+category: manuscripts
+permalink: /publication/2025-01-03-epilogo
+date: 2025-01-03
+venue: 'La Ciencia Política Chilena desde sus protagonistas (ACCP)'
+citation: 'Palma, N. C. (2025). &quot;Epílogo.&quot; En H. Jofré Rodríguez & M. C. Godoy (Eds.), <i>La Ciencia Política Chilena desde sus protagonistas</i> (pp. 291–300). ACCP. ISBN: 978-956-08327-0-2.'
 ---
-
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+Book chapter.
