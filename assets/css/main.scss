@@ -41,3 +41,51 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+/* =============================================
+   Deep Blue & Sage — Custom color palette
+   ============================================= */
+
+/* Links */
+a { color: #6b9e8c; }
+a:visited { color: #4d7d6b; }
+a:hover { color: #4d7d6b; text-decoration: underline; }
+
+/* Navbar */
+.greedy-nav { background: #1a2f4a !important; }
+.greedy-nav a { color: #d0dde8 !important; }
+.greedy-nav a:hover { color: #6b9e8c !important; }
+.site-title, .site-title:visited { color: #eef2f0 !important; }
+.greedy-nav .visible-links a:before { background: #6b9e8c !important; }
+
+/* Sidebar */
+.sidebar { background: #f4f6f5; }
+.author__name { color: #1a2f4a !important; }
+.author__bio { color: #3d5c52 !important; }
+.author__urls a { color: #6b9e8c !important; }
+.author__urls a:hover { color: #4d7d6b !important; }
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 { color: #1a2f4a; }
+
+/* Botones */
+.btn--primary { background-color: #1a2f4a !important; border-color: #1a2f4a !important; }
+.btn--primary:hover { background-color: #6b9e8c !important; border-color: #6b9e8c !important; }
+
+/* Tags y etiquetas */
+.page__taxonomy-item a {
+  background: #d4e8e1;
+  color: #2a5e50 !important;
+  border-color: #6b9e8c !important;
+}
+.page__taxonomy-item a:hover {
+  background: #6b9e8c;
+  color: #fff !important;
+}
+
+/* Footer */
+.page__footer { background: #1a2f4a !important; }
+.page__footer a { color: #6b9e8c !important; }
+
+/* Fondo general */
+body { background-color: #f4f6f5; }
