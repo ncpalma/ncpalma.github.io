@@ -1,13 +1,11 @@
 ---
-title: "Paper Title Number 5, with math $$E=mc^2$$"
+title: "¿Una nueva ola de derecha radical?"
 collection: publications
-category: conferences
-permalink: /publication/2024-02-17-paper-title-number-4
-excerpt: 'This paper is about a famous math equation, $$E=mc^2$$'
-date: 2024-02-17
-venue: 'GitHub Journal of Bugs'
-paperurl: 'https://academicpages.github.io/files/paper3.pdf'
-citation: 'Your Name, You. (2024). &quot;Paper Title Number 3.&quot; <i>GitHub Journal of Bugs</i>. 1(3).'
+category: manuscripts
+permalink: /publication/2020-01-02-nueva-ola-derecha
+date: 2020-01-02
+venue: 'Revista CIDOB d''afers internacionals'
+paperurl: 'https://doi.org/10.24241/rcai.2020.126.3.265'
+citation: 'Palma, N. C. et al. (2020). &quot;¿Una nueva ola de derecha radical?&quot; <i>Revista CIDOB d&apos;afers internacionals</i>, 126, 265–268.'
 ---
-
-Using [MathJax](https://www.mathjax.org/) in the description is supported - $$E=mc^2$$ - however, the use must be mindful that the default delimiters are `$$...$$` and `\\[...\\]` which differs from the `$...$` that is typically expected.
+Book review.
