@@ -1,14 +1,10 @@
 ---
-title: "Paper Title Number 3"
+title: "Alicia Frohmann: democracia practicada y feminismo institucional"
 collection: publications
 category: manuscripts
-permalink: /publication/2015-10-01-paper-title-number-3
-excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
-date: 2015-10-01
-venue: 'Journal 1'
-slidesurl: 'https://academicpages.github.io/files/slides3.pdf'
-paperurl: 'https://academicpages.github.io/files/paper3.pdf'
-citation: 'Your Name, You. (2015). &quot;Paper Title Number 3.&quot; <i>Journal 1</i>. 1(3).'
+permalink: /publication/2025-01-02-alicia-frohmann
+date: 2025-01-02
+venue: 'La Ciencia Política Chilena desde sus protagonistas (ACCP)'
+citation: 'Palma, N. C. (2025). &quot;Alicia Frohmann: democracia practicada y feminismo institucional.&quot; En H. Jofré Rodríguez & M. C. Godoy (Eds.), <i>La Ciencia Política Chilena desde sus protagonistas</i> (pp. 25–43). ACCP. ISBN: 978-956-08327-0-2.'
 ---
-
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+Book chapter.
