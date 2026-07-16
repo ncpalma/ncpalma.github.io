@@ -1,9 +1,9 @@
 <svg width="180" height="180" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
-<line x1="45" y1="30" x2="45" y2="150" stroke="#1B2A41" stroke-width="6" stroke-linecap="round"/>
-<line x1="135" y1="30" x2="135" y2="150" stroke="#1B2A41" stroke-width="6" stroke-linecap="round"/>
-<line x1="37" y1="60" x2="45" y2="60" stroke="#1B2A41" stroke-width="1.5" opacity="0.55"/>
-<line x1="37" y1="90" x2="45" y2="90" stroke="#1B2A41" stroke-width="1.5" opacity="0.55"/>
-<line x1="37" y1="120" x2="45" y2="120" stroke="#1B2A41" stroke-width="1.5" opacity="0.55"/>
+<line x1="45" y1="30" x2="45" y2="150" stroke="#E8E2D8" stroke-width="6" stroke-linecap="round"/>
+<line x1="135" y1="30" x2="135" y2="150" stroke="#E8E2D8" stroke-width="6" stroke-linecap="round"/>
+<line x1="37" y1="60" x2="45" y2="60" stroke="#E8E2D8" stroke-width="1.5" opacity="0.55"/>
+<line x1="37" y1="90" x2="45" y2="90" stroke="#E8E2D8" stroke-width="1.5" opacity="0.55"/>
+<line x1="37" y1="120" x2="45" y2="120" stroke="#E8E2D8" stroke-width="1.5" opacity="0.55"/>
 <line x1="44" y1="29" x2="136" y2="151" stroke="#C46A45" stroke-width="1.5" stroke-dasharray="5 4" opacity="0.9"/>
 <circle cx="50" cy="42" r="4" fill="#C46A45"/>
 <circle cx="65" cy="52" r="4.5" fill="#C46A45"/>

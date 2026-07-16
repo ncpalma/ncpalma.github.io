@@ -5,7 +5,7 @@
 <!-- Support for Academicons -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
 
-<!-- favicon from https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_academic-progressive.svg -->
+<!-- favicon: personal logo -->
 <link rel="apple-touch-icon" sizes="180x180" href="{{ base_path }}/images/apple-touch-icon-180x180.png"/>
 <link rel="icon" type="image/svg+xml" href="{{ base_path }}/images/favicon.svg"/>
 <link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-32x32.png" sizes="32x32"/>
@@ -13,5 +13,17 @@
 <link rel="manifest" href="{{ base_path }}/images/manifest.json"/>
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="#ffffff"/>
+
+<!-- site logo in the masthead: light/dark variants -->
+<style>
+  .site-logo {
+    height: 1.25em;
+    vertical-align: -0.25em;
+    margin-right: 0.4em;
+  }
+  .site-logo--dark { display: none; }
+  html[data-theme="dark"] .site-logo--light { display: none; }
+  html[data-theme="dark"] .site-logo--dark { display: inline-block; }
+</style>
 
 <!-- end custom head snippets -->
