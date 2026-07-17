@@ -11,11 +11,11 @@ main:
   - title: "Publications"
     url: /publications/
 
-  - title: "Talks & Seminars"
-    url: /talks/
-
   - title: "Teaching"
     url: /teaching/
+
+  - title: "Talks & Seminars"
+    url: /talks/
 
   - title: "Blog Posts"
     url: /year-archive/

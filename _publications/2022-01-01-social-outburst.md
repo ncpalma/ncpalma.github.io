@@ -1,7 +1,7 @@
 ---
 title: "Reseña de The Social Outburst and Political Representation in Chile"
 collection: publications
-category: manuscripts
+category: bookreviews
 permalink: /publication/2022-01-01-social-outburst
 date: 2022-01-01
 venue: 'Revista Ecuatoriana de Ciencia Política'
