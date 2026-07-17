@@ -11,35 +11,37 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D. in Political Science, Pontificia Universidad Católica de Chile, 2024
+  * Specializations in Comparative Politics and Research Methods
+* M.A. in Political Science, Pontificia Universidad Católica de Chile, 2021
+  * Specializations in Comparative Politics and Research Methods
+* B.A. in Political Science, Universidad Diego Portales, 2017
+  * Graduated with High Honors
 
-Work experience
+Academic appointments
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* 2025–present: Professor, Department of Politics and Government, Universidad Alberto Hurtado
+* 2024–2025: Postdoctoral Fellow, Center for Social Conflict and Cohesion Studies (COES)
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
+Current research projects
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* *Dealignment or Realignment? Studying Electoral Behavior in Chile in Comparative Perspective* — funded by Universidad Alberto Hurtado
+* *Backlash Politics and the Rise of the Far-Right: Longitudinal Evidence from Contemporary Chile* — with Cristóbal Rovira Kaltwasser and Matías Bargsted
+* *Consistency and Change in the Chilean Electorate: Political Participation Between COVID-19 and the Constitutional Change Process* — with Federica Sánchez Staniak
+* *Satisfaction with Democracy and Top-Down Mechanisms of Direct Democracy: Exploring the Short- and Long-Term Effects*
+* *Electoral Reforms and Voter Turnout: Analyzing the Impact of District Magnitude*
+
+Grants and fellowships
+======
+* 2023: Grant to attend the REPAL dissertation workshop, David Rockefeller Center for Latin American Studies, Harvard University
+* 2023: Grant to attend the REPAL dissertation workshop, Network for the Study of Latin American Political Economy (REPAL)
+* 2023: Travel grant, IPSA World Congress, Institute of Political Science, Pontificia Universidad Católica de Chile
+* 2023: COES Doctoral Scholarship
+* 2023: VRI Doctoral Scholarship (dissertation completion), Pontificia Universidad Católica de Chile
+* 2022: Summer Visiting Doctoral Research Fellowship, Boston College
+* 2022: VRI Doctoral Scholarship for International Doctoral Research Stay, Pontificia Universidad Católica de Chile
+* 2019–2023: ANID National Doctoral Scholarship, National Agency for Research and Development
+* 2019–2021: VRI Doctoral Scholarship, Pontificia Universidad Católica de Chile
 
 Publications
 ======
@@ -47,7 +49,7 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
+Talks & Seminars
 ======
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
@@ -61,4 +63,8 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Treasurer, Chilean Political Science Association (ACCP)
+* Mentor, TRANSPARENTA 2024, Commission on Public Integrity and Transparency
+* Member of the Graduate Faculty, Master's in Research Methods, Faculty of Social Sciences and History, Universidad Diego Portales
+* Reviewer: Revista de Ciencia Política (RCP) and Revista Ecuatoriana de Ciencia Política
+* Coordinator, Civil Society Roundtable for Inclusive Voting
