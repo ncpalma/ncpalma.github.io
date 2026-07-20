@@ -9,7 +9,7 @@ tags:
   - fieldwork
 ---
 
-I'm writing this from Sydney, halfway through a six-week research stay. It's my first time in Australia and, as it happens, my first time doing sustained archival work.
+I'm writing this from Sydney, halfway through a six-week research stay. It's my second time in Australia and, as it happens, my first time doing sustained archival work.
 
 What brought me across the Pacific is a project on how the populist radical right mobilizes nativist discourse against Indigenous peoples. Most of what we know about nativism comes from studying hostility toward immigrants: the outsider at the border. But in settler societies the radical right also constructs an enemy within, recasting Indigenous claims (recognition, treaty, a constitutional voice) as threats to national unity. Australia's 2023 referendum on The Voice, which proposed a constitutionally enshrined Indigenous advisory body and was rejected at the national vote, offers an unusually sharp case for watching that discourse at work.
 
