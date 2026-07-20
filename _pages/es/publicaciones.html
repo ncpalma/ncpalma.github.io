@@ -1,0 +1,26 @@
+---
+layout: archive
+title: "Publicaciones"
+permalink: /es/publicaciones/
+author_profile: true
+translation_url: /publications/
+---
+
+{% include base_path %}
+
+{% assign es_categories = "manuscripts|Artículos académicos,bookreviews|Reseñas de libros,reports|Informes de políticas públicas,chapters|Capítulos de libros" | split: "," %}
+{% for cat in es_categories %}
+  {% assign parts = cat | split: "|" %}
+  {% assign title_shown = false %}
+  {% for post in site.publications reversed %}
+    {% if post.category != parts[0] %}
+      {% continue %}
+    {% endif %}
+    {% unless title_shown %}
+      <h2>{{ parts[1] }}</h2>
+      <hr />
+      {% assign title_shown = true %}
+    {% endunless %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endfor %}
