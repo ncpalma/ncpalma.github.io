@@ -1,21 +1,21 @@
 /* ==========================================================================
-    AIR THEME - DARK VERSION
+    AIR THEME - DARK VERSION — Warm Minimal
     ========================================================================== */
 
 /* Color codes used for the theme */
-$primary-color              : #00adb5;
-$dark-primary-color         : mix(#000, $primary-color, 40%);
-$darker-primary-color       : mix(#000, $primary-color, 60%);
-$light-primary-color        : mix(#000, $primary-color, 50%);
+$primary-color              : #cc8a6a;  /* lighter terracotta for dark bg */
+$dark-primary-color         : mix(#000, $primary-color, 25%);
+$darker-primary-color       : mix(#000, $primary-color, 45%);
+$light-primary-color        : mix(#fff, $primary-color, 30%);
 
-$background                 : #252a34;
-$background-light           : mix(#fff, $background, 20%);
-$background-lighter         : mix(#fff, $background, 90%);
-$text                       : #eaeaea;
-$link                       : mix($primary-color, $text, 40%);
-$link-dark                  : mix(#000, $link, 25%);
-$link-light                 : mix(#fff, $link, 25%);
-$footer                     : mix(#000, $background, 30%);
+$background                 : #201d1b;  /* warm near-black */
+$background-light           : mix(#fff, $background, 8%);
+$background-lighter         : mix(#fff, $background, 4%);
+$text                       : #ece7e0;
+$link                       : #d69a7c;
+$link-dark                  : mix(#000, $link, 20%);
+$link-light                 : mix(#fff, $link, 20%);
+$footer                     : #191613;
 
 /* Color codes used for the site */
 $danger-color               : #ee5f5b;
@@ -36,20 +36,20 @@ $sidebar-screen-min-width   : 1024px;
 
 /* Dark theme for the site */
 html[data-theme="dark"] {
-    --global-base-color                 : #{$primary-color};
-    --global-bg-color                   : #{$background};
-    --global-footer-bg-color            : #{$footer};
-    --global-border-color               : #{$light-primary-color};
-    --global-dark-border-color          : #{$background-light};
-    --global-code-background-color      : #fafafa;
-    --global-code-text-color            : #{$darker-primary-color};
-    --global-fig-caption-color          : #{$light-primary-color};
-    --global-link-color                 : #{$link};
-    --global-link-color-hover           : #{$link-dark};
-    --global-link-color-visited         : #{$link-light};
-    --global-masthead-link-color        : #{$text};
-    --global-masthead-link-color-hover  : #{$primary-color};
-    --global-text-color                 : #{$text};
-    --global-text-color-light           : #{$light-primary-color};
-    --global-thead-color                : #{$background-lighter};
+    --global-base-color                 : #cc8a6a;
+    --global-bg-color                   : #201d1b;
+    --global-footer-bg-color            : #191613;
+    --global-border-color               : #3a342f;
+    --global-dark-border-color          : #4a423b;
+    --global-code-background-color      : #2a2622;
+    --global-code-text-color            : #e0b79f;
+    --global-fig-caption-color          : #a89d92;
+    --global-link-color                 : #d69a7c;
+    --global-link-color-hover           : #e0b298;
+    --global-link-color-visited         : #c48a6c;
+    --global-masthead-link-color        : #ece7e0;
+    --global-masthead-link-color-hover  : #cc8a6a;
+    --global-text-color                 : #ece7e0;
+    --global-text-color-light           : #a89d92;
+    --global-thead-color                : #2a2622;
 }
