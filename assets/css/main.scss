@@ -43,65 +43,101 @@
 ;
 
 /* =============================================
-   Deep Blue & Sage — Custom color palette
+   Warm Minimal — Custom color palette
+   Bone background, charcoal text, terracotta accent.
    ============================================= */
 
-/* Links */
-a { color: #6b9e8c; }
-a:visited { color: #4d7d6b; }
-a:hover { color: #4d7d6b; text-decoration: underline; }
+/* ---- Links ---- */
+a { color: #9a5b3f; }
+a:visited { color: #b07a62; }
+a:hover { color: #7d4832; text-decoration: underline; }
 
-/* Navbar - modo claro */
-.greedy-nav { background: #1a2f4a !important; }
-.greedy-nav a { color: #d0dde8 !important; }
-.greedy-nav a:hover { color: #6b9e8c !important; }
-.site-title, .site-title:visited { color: #eef2f0 !important; }
-.greedy-nav .visible-links a:before { background: #6b9e8c !important; }
-
-/* Navbar - modo oscuro (letras más visibles) */
-[data-theme="dark"] .greedy-nav a,
-.dark .greedy-nav a { color: #c8d8e8 !important; }
-[data-theme="dark"] .site-title,
-.dark .site-title { color: #eef2f0 !important; }
-
-/* Sidebar */
-.sidebar { background: #f4f6f5; }
-.author__name { color: #1a2f4a !important; }
-.author__bio { color: #2c3e50 !important; }
-.author__urls a { color: #6b9e8c !important; }
-.author__urls a:hover { color: #4d7d6b !important; }
-
-/* Texto del cuerpo — más oscuro y legible */
-body { 
-  background-color: #f4f6f5; 
-  color: #2c3e50 !important;
+/* ---- Body ---- */
+body {
+  background-color: #faf8f5;
+  color: #2b2b2b !important;
 }
-p, li, td, th { color: #2c3e50 !important; }
+p, li, td, th { color: #2b2b2b !important; }
 
-/* Info sidebar (Santiago, UAH) */
+/* ---- Headings ---- */
+h1, h2, h3, h4, h5, h6 { color: #2b2b2b; }
+
+/* ---- Navbar / masthead (light) ---- */
+.masthead { background: #faf8f5 !important; }
+.greedy-nav { background: #faf8f5 !important; }
+.greedy-nav button { background: #faf8f5 !important; }
+.masthead__menu-item { background-color: #faf8f5 !important; }
+.greedy-nav a { color: #2b2b2b !important; }
+.greedy-nav a:hover { color: #9a5b3f !important; }
+.site-title, .site-title:visited { color: #2b2b2b !important; }
+.greedy-nav .visible-links a:before { background: #9a5b3f !important; }
+
+/* ---- Sidebar ---- */
+.sidebar { background: #faf8f5; }
+.author__name { color: #2b2b2b !important; }
+.author__bio { color: #2b2b2b !important; }
+.author__urls a { color: #9a5b3f !important; }
+.author__urls a:hover { color: #7d4832 !important; }
 .author__urls-wrapper p,
 .author__content p,
 p.author__pronouns,
-.author__body { color: #2c3e50 !important; }
+.author__body { color: #6b625c !important; }
 
-/* Headings */
-h1, h2, h3, h4, h5, h6 { color: #1a2f4a; }
+/* ---- Buttons ---- */
+.btn--primary { background-color: #9a5b3f !important; border-color: #9a5b3f !important; }
+.btn--primary:hover { background-color: #7d4832 !important; border-color: #7d4832 !important; }
 
-/* Botones */
-.btn--primary { background-color: #1a2f4a !important; border-color: #1a2f4a !important; }
-.btn--primary:hover { background-color: #6b9e8c !important; border-color: #6b9e8c !important; }
-
-/* Tags */
+/* ---- Tags ---- */
 .page__taxonomy-item a {
-  background: #d4e8e1;
-  color: #2a5e50 !important;
-  border-color: #6b9e8c !important;
+  background: #f0e7e1;
+  color: #7d4832 !important;
+  border-color: #9a5b3f !important;
 }
 .page__taxonomy-item a:hover {
-  background: #6b9e8c;
+  background: #9a5b3f;
   color: #fff !important;
 }
 
-/* Footer */
-.page__footer { background: #1a2f4a !important; }
-.page__footer a { color: #6b9e8c !important; }
+/* ---- Footer ---- */
+.page__footer { background: #f2ede8 !important; color: #6b625c !important; }
+.page__footer a { color: #9a5b3f !important; }
+
+/* =============================================
+   Dark mode (theme toggle) — warm minimal dark
+   ============================================= */
+[data-theme="dark"] body,
+.dark body {
+  background-color: #201d1b !important;
+  color: #ece7e0 !important;
+}
+[data-theme="dark"] p, [data-theme="dark"] li, [data-theme="dark"] td, [data-theme="dark"] th,
+.dark p, .dark li, .dark td, .dark th { color: #ece7e0 !important; }
+
+[data-theme="dark"] h1, [data-theme="dark"] h2, [data-theme="dark"] h3,
+[data-theme="dark"] h4, [data-theme="dark"] h5, [data-theme="dark"] h6 { color: #ece7e0; }
+
+[data-theme="dark"] a, .dark a { color: #d69a7c; }
+[data-theme="dark"] a:hover, .dark a:hover { color: #e0b298; }
+
+[data-theme="dark"] .masthead,
+[data-theme="dark"] .greedy-nav,
+[data-theme="dark"] .greedy-nav button,
+.dark .greedy-nav { background: #201d1b !important; }
+[data-theme="dark"] .masthead__menu-item { background-color: #201d1b !important; }
+[data-theme="dark"] .greedy-nav a,
+.dark .greedy-nav a { color: #ece7e0 !important; }
+[data-theme="dark"] .greedy-nav a:hover { color: #cc8a6a !important; }
+[data-theme="dark"] .site-title,
+.dark .site-title { color: #ece7e0 !important; }
+
+[data-theme="dark"] .sidebar { background: #201d1b; }
+[data-theme="dark"] .author__name { color: #ece7e0 !important; }
+[data-theme="dark"] .author__bio,
+[data-theme="dark"] .author__urls-wrapper p,
+[data-theme="dark"] .author__content p,
+[data-theme="dark"] p.author__pronouns,
+[data-theme="dark"] .author__body { color: #a89d92 !important; }
+[data-theme="dark"] .author__urls a { color: #d69a7c !important; }
+
+[data-theme="dark"] .page__footer { background: #191613 !important; color: #a89d92 !important; }
+[data-theme="dark"] .page__footer a { color: #d69a7c !important; }
