@@ -8,7 +8,7 @@
 #      Markdown formatted page while the second is generated using JSON.
 
 main:
-  - title: "Publications"
+  - title: "Research"
     url: /publications/
 
   - title: "Teaching"
@@ -25,3 +25,17 @@ main:
 
   # - title: "CV"
   #   url: /cv-json/
+
+# Spanish menu, shown on pages under /es/ (pending masthead integration)
+es:
+  - title: "Publicaciones"
+    url: /es/publicaciones/
+
+  - title: "Docencia"
+    url: /es/docencia/
+
+  - title: "Charlas y seminarios"
+    url: /es/charlas/
+
+  - title: "CV"
+    url: /es/cv/

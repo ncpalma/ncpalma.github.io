@@ -23,14 +23,6 @@ Academic appointments
 * 2025–present: Professor, Department of Politics and Government, Universidad Alberto Hurtado
 * 2024–2025: Postdoctoral Fellow, Center for Social Conflict and Cohesion Studies (COES)
 
-Current research projects
-======
-* *Dealignment or Realignment? Studying Electoral Behavior in Chile in Comparative Perspective* — funded by Universidad Alberto Hurtado
-* *Backlash Politics and the Rise of the Far-Right: Longitudinal Evidence from Contemporary Chile* — with Cristóbal Rovira Kaltwasser and Matías Bargsted
-* *Consistency and Change in the Chilean Electorate: Political Participation Between COVID-19 and the Constitutional Change Process* — with Federica Sánchez Staniak
-* *Satisfaction with Democracy and Top-Down Mechanisms of Direct Democracy: Exploring the Short- and Long-Term Effects*
-* *Electoral Reforms and Voter Turnout: Analyzing the Impact of District Magnitude*
-
 Grants and fellowships
 ======
 * 2023: Grant to attend the REPAL dissertation workshop, David Rockefeller Center for Latin American Studies, Harvard University

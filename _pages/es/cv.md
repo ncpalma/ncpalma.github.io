@@ -22,14 +22,6 @@ Nombramientos académicos
 * 2025–presente: Profesora, Departamento de Política y Gobierno, Universidad Alberto Hurtado
 * 2024–2025: Investigadora Postdoctoral, Centro de Estudios de Conflicto y Cohesión Social (COES)
 
-Proyectos de investigación en curso
-======
-* *Dealignment or Realignment? Studying Electoral Behavior in Chile in Comparative Perspective* — financiado por la Universidad Alberto Hurtado
-* *Backlash Politics and the Rise of the Far-Right: Longitudinal Evidence from Contemporary Chile* — con Cristóbal Rovira Kaltwasser y Matías Bargsted
-* *Consistency and Change in the Chilean Electorate: Political Participation Between COVID-19 and the Constitutional Change Process* — con Federica Sánchez Staniak
-* *Satisfaction with Democracy and Top-Down Mechanisms of Direct Democracy: Exploring the Short- and Long-Term Effects*
-* *Electoral Reforms and Voter Turnout: Analyzing the Impact of District Magnitude*
-
 Becas y financiamiento
 ======
 * 2023: Beca para asistir al taller de tesis de REPAL, David Rockefeller Center for Latin American Studies, Universidad de Harvard
