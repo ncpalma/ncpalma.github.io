@@ -1,21 +1,22 @@
 /* ==========================================================================
-    AIR THEME - LIGHT VERSION
+    AIR THEME - LIGHT VERSION — Warm Minimal
+    Bone background, charcoal text, restrained terracotta accent.
     ========================================================================== */
 
 /* Color codes used for the theme */
-$primary-color              : #0092ca;
-$dark-primary-color         : mix(#000, $primary-color, 40%);
-$darker-primary-color       : mix(#000, $primary-color, 60%);
-$light-primary-color        : mix(#000, $primary-color, 50%);
+$primary-color              : #9a5b3f;  /* terracotta accent */
+$dark-primary-color         : mix(#000, $primary-color, 25%);
+$darker-primary-color       : mix(#000, $primary-color, 45%);
+$light-primary-color        : mix(#fff, $primary-color, 30%);
 
-$background                 : #eeeeee;
-$background-light           : mix(#fff, $background, 20%);
-$background-lighter         : mix(#fff, $background, 90%);
-$text                       : #222831;
-$link                       : #393e46;
-$link-dark                  : mix(#000, $link, 25%);
+$background                 : #faf8f5;  /* warm off-white / bone */
+$background-light           : mix(#000, $background, 6%);
+$background-lighter         : mix(#000, $background, 3%);
+$text                       : #2b2b2b;  /* charcoal */
+$link                       : #9a5b3f;
+$link-dark                  : mix(#000, $link, 22%);
 $link-light                 : mix(#fff, $link, 25%);
-$footer                     : $primary-color;
+$footer                     : #f2ede8;  /* soft warm footer */
 
 /* Color codes used for the site */
 $danger-color               : #ee5f5b;
@@ -36,20 +37,20 @@ $sidebar-screen-min-width   : 1024px;
 
 /* Light theme for the site */
 :root {
-    --global-base-color                 : #{$primary-color};
-    --global-bg-color                   : #{$background};
-    --global-footer-bg-color            : #{$footer};
-    --global-border-color               : #{$light-primary-color};
-    --global-dark-border-color          : #{$background-light};
-    --global-code-background-color      : #fafafa;
-    --global-code-text-color            : #{$darker-primary-color};
-    --global-fig-caption-color          : #{$light-primary-color};
-    --global-link-color                 : #{$link};
-    --global-link-color-hover           : #{$link-dark};
-    --global-link-color-visited         : #{$link-light};
-    --global-masthead-link-color        : #{$text};
-    --global-masthead-link-color-hover  : #{$primary-color};
-    --global-text-color                 : #{$text};
-    --global-text-color-light           : #{$light-primary-color};
-    --global-thead-color                : #{$background-lighter};
+    --global-base-color                 : #9a5b3f;
+    --global-bg-color                   : #faf8f5;
+    --global-footer-bg-color            : #f2ede8;
+    --global-border-color               : #ece7e0;
+    --global-dark-border-color          : #ddd5cc;
+    --global-code-background-color      : #f6f2ee;
+    --global-code-text-color            : #7d4832;
+    --global-fig-caption-color          : #6b625c;
+    --global-link-color                 : #9a5b3f;
+    --global-link-color-hover           : #7d4832;
+    --global-link-color-visited         : #b07a62;
+    --global-masthead-link-color        : #2b2b2b;
+    --global-masthead-link-color-hover  : #9a5b3f;
+    --global-text-color                 : #2b2b2b;
+    --global-text-color-light           : #6b625c;
+    --global-thead-color                : #f2ede8;
 }
