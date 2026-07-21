@@ -143,69 +143,23 @@ p.author__pronouns,
 [data-theme="dark"] .page__footer a { color: #d69a7c !important; }
 
 /* =============================================
-   Responsive navigation (mobile / tablet)
-   The theme's priority-plus JS is not bundled, so on narrow
-   screens the menu would overflow off-screen. Instead of a
-   hamburger, we let the menu wrap so every item stays visible
-   and tappable, and put the masthead in normal flow so it
-   never overlaps the page content.
+   Navigation & sidebar behaviour (mobile)
+   The collapsible menu (hamburger) and the "Follow" dropdown are driven
+   by JS in _includes/scripts.html. These rules show the hamburger on
+   small screens and reveal the dropdown when it is toggled open.
    ============================================= */
 
-/* The overflow toggle button has no JS behind it — hide it everywhere. */
-.greedy-nav > button,
-.greedy-nav .greedy-nav__toggle { display: none !important; }
-
+/* Overflow toggle (hamburger): hidden on desktop, shown on small screens */
+.greedy-nav > button { display: none; }
 @media (max-width: 57.8125em) {
-  .masthead { position: static !important; }
-  #main { margin-top: 1.5em; }
-
-  .greedy-nav { min-width: 0; }
-  .greedy-nav .visible-links {
-    display: flex !important;
-    flex-wrap: wrap;
-    align-items: center;
-    row-gap: 0.15em;
-  }
-  .greedy-nav .visible-links li {
-    display: inline-flex !important;
-    vertical-align: middle;
-  }
-  /* Name / logo on its own top line, menu items wrap below */
-  .greedy-nav .visible-links li:first-child { width: 100%; }
-  .greedy-nav .visible-links li a { margin: 0 0.9rem 0 0; padding: 0.35rem 0; }
-  .greedy-nav .visible-links li:first-child a { margin-left: 0; }
+  .greedy-nav > button { display: block; }
 }
 
-/* =============================================
-   Responsive sidebar (mobile / tablet)
-   The theme collapses the author sidebar on small screens
-   (tiny avatar + a "Follow" button that needs the missing JS
-   to reveal the links). Instead, show the full profile like on
-   desktop: larger photo and logos, links always visible, centered.
-   ============================================= */
+/* "Follow" dropdown (author links) */
+.author__urls.is--visible { display: block; z-index: 100; }
+
+/* Institution logos: their own centered block below the profile */
+.author__institution { clear: both; text-align: center; margin-top: 1.25em; }
 @media (max-width: 57.8125em) {
-  .sidebar { text-align: center; }
-
-  .author__avatar { display: block; width: auto; height: auto; }
-  .author__avatar img {
-    width: auto; max-width: 210px; margin: 0 auto;
-    padding: 5px; border: 1px solid var(--global-border-color);
-  }
-
-  .author__content { display: block; width: 100%; padding-left: 0; padding-right: 0; }
-  .sidebar .author__desktop { display: block !important; }
-
-  .author__urls-wrapper { display: block; }
-  .author__urls-wrapper button { display: none !important; }
-  .author__urls {
-    display: block !important; position: relative; right: auto;
-    margin: 0.5em auto 0; padding: 0; border: 0; background: transparent;
-    box-shadow: none; z-index: auto;
-  }
-  .author__urls:before,
-  .author__urls:after { display: none; }
-  .author__urls li { white-space: normal; }
-
-  /* Larger logos to match the fuller layout */
-  .author__institution img { max-width: 200px !important; width: 62% !important; }
+  .author__institution img { max-width: 160px !important; }
 }
