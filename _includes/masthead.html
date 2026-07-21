@@ -18,6 +18,15 @@
               <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
             </li>
           {% endfor %}
+          {% if page.translation_url %}
+          <li class="masthead__menu-item persist lang-toggle">
+            {% if page.url contains '/es/' %}
+              <a href="{{ base_path }}{{ page.translation_url }}" title="Read in English">EN</a>
+            {% else %}
+              <a href="{{ base_path }}{{ page.translation_url }}" title="Leer en español">ES</a>
+            {% endif %}
+          </li>
+          {% endif %}
           <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
           </li>
