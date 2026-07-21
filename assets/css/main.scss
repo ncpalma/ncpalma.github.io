@@ -141,3 +141,37 @@ p.author__pronouns,
 
 [data-theme="dark"] .page__footer { background: #191613 !important; color: #a89d92 !important; }
 [data-theme="dark"] .page__footer a { color: #d69a7c !important; }
+
+/* =============================================
+   Responsive navigation (mobile / tablet)
+   The theme's priority-plus JS is not bundled, so on narrow
+   screens the menu would overflow off-screen. Instead of a
+   hamburger, we let the menu wrap so every item stays visible
+   and tappable, and put the masthead in normal flow so it
+   never overlaps the page content.
+   ============================================= */
+
+/* The overflow toggle button has no JS behind it — hide it everywhere. */
+.greedy-nav > button,
+.greedy-nav .greedy-nav__toggle { display: none !important; }
+
+@media (max-width: 57.8125em) {
+  .masthead { position: static !important; }
+  #main { margin-top: 1.5em; }
+
+  .greedy-nav { min-width: 0; }
+  .greedy-nav .visible-links {
+    display: flex !important;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 0.15em;
+  }
+  .greedy-nav .visible-links li {
+    display: inline-flex !important;
+    vertical-align: middle;
+  }
+  /* Name / logo on its own top line, menu items wrap below */
+  .greedy-nav .visible-links li:first-child { width: 100%; }
+  .greedy-nav .visible-links li a { margin: 0 0.9rem 0 0; padding: 0.35rem 0; }
+  .greedy-nav .visible-links li:first-child a { margin-left: 0; }
+}
