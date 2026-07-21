@@ -6,11 +6,6 @@ redirect_from:
   - /about/
   - /about.html
 ---
-
-<p style="text-align: center; margin: 0.25em 0 1.75em;">
-  <img src="/images/nerea-palma-logo-claro.svg" alt="Nerea C. Palma" style="max-width: 340px; width: 100%; height: auto;" />
-</p>
-
 Welcome to my website! I am a Professor in the Department of Politics and Government at Universidad Alberto Hurtado (Santiago, Chile). My research is organized around two lines of inquiry: political behavior and public opinion in comparative perspective, which includes political participation, democratic values, and electoral behavior; and the politics of the radical right in Latin America and beyond.
 
 I hold a PhD (2024) and a Master's in Political Science from the Pontificia Universidad Católica de Chile, with concentrations in Comparative Politics and Research Methods. During my doctoral studies I was an ANID fellow, and I later held a postdoctoral fellowship at the Center for Social Conflict and Cohesion Studies (COES). I earned my undergraduate degree in Political Science from Universidad Diego Portales.
