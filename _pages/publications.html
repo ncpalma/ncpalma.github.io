@@ -8,7 +8,24 @@ translation_url: /es/publicaciones/
 
 {% include base_path %}
 
-<h2>Work in Progress</h2>
+{% assign category_order = "manuscripts,chapters,reports,bookreviews" | split: "," %}
+{% for cat in category_order %}
+  {% assign category_title = site.publication_category[cat].title %}
+  {% assign title_shown = false %}
+  {% for post in site.publications reversed %}
+    {% if post.category != cat %}
+      {% continue %}
+    {% endif %}
+    {% unless title_shown %}
+      <h2>{{ category_title }}</h2>
+      <hr />
+      {% assign title_shown = true %}
+    {% endunless %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endfor %}
+
+<h2>Work in Progress (Selection)</h2>
 <hr />
 <p><em>Titles and descriptions of works in progress have been modified to protect the integrity of double-blind peer review. Please get in touch if you would like to know more or read a draft.</em></p>
 
@@ -34,18 +51,3 @@ translation_url: /es/publicaciones/
   <li style="margin-bottom: 1.2em;"><strong>The New Left's Electorate in Chile</strong><br />
   The other side of the realignment coin: who votes for the new left, and how do they differ from the rest of the electorate? Using longitudinal panel data, the paper traces whom these voters supported before the new left existed (if they voted at all) and how their public opinion trajectories have evolved relative to other voters.</li>
 </ul>
-
-{% for category in site.publication_category %}
-  {% assign title_shown = false %}
-  {% for post in site.publications reversed %}
-    {% if post.category != category[0] %}
-      {% continue %}
-    {% endif %}
-    {% unless title_shown %}
-      <h2>{{ category[1].title }}</h2>
-      <hr />
-      {% assign title_shown = true %}
-    {% endunless %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endfor %}
