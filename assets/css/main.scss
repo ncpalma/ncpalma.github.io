@@ -146,20 +146,29 @@ p.author__pronouns,
    Navigation & sidebar behaviour (mobile)
    The collapsible menu (hamburger) and the "Follow" dropdown are driven
    by JS in _includes/scripts.html. These rules show the hamburger on
-   small screens and reveal the dropdown when it is toggled open.
+   small screens, reveal the dropdown when toggled, keep the bar in
+   normal flow (so it never covers the profile), and keep the logos tidy.
    ============================================= */
 
-/* Overflow toggle (hamburger): hidden on desktop, shown on small screens */
+/* Overflow toggle (hamburger): hidden on desktop */
 .greedy-nav > button { display: none; }
-@media (max-width: 57.8125em) {
-  .greedy-nav > button { display: block; }
-}
 
 /* "Follow" dropdown (author links) */
 .author__urls.is--visible { display: block; z-index: 100; }
 
 /* Institution logos: their own centered block below the profile */
 .author__institution { clear: both; text-align: center; margin-top: 1.25em; }
+
 @media (max-width: 57.8125em) {
-  .author__institution img { max-width: 160px !important; }
+  /* Show the hamburger on small screens */
+  .greedy-nav > button { display: block; }
+
+  /* Keep the bar in normal flow so it never covers the profile photo/name */
+  .masthead { position: static !important; }
+  #main { margin-top: 1em; }
+
+  /* Keep the logos modest so they don't crowd the profile */
+  .author__institution { margin-top: 1em; }
+  .author__institution img { max-width: 118px !important; }
+  .author__institution img:last-child { max-width: 132px !important; }
 }
