@@ -143,44 +143,73 @@ p.author__pronouns,
 [data-theme="dark"] .page__footer a { color: #d69a7c !important; }
 
 /* =============================================
-   Navigation & sidebar behaviour (mobile)
-   The hamburger menu and the "Follow" dropdown are driven by JS in
-   /assets/js/site-nav.js. On small screens the inline nav links are
-   hidden and reached through the hamburger dropdown instead.
+   Mobile menu (pure CSS, no JavaScript)
+   The hamburger is a checkbox + label; the menu list is already in the
+   markup and revealed with the :checked sibling selector.
    ============================================= */
 
-/* Overflow toggle (hamburger): hidden on desktop */
-.greedy-nav > button { display: none; }
-
-/* "Follow" dropdown (author links) */
+/* Follow dropdown (author links) — toggled by JS */
 .author__urls.is--visible { display: block; z-index: 100; }
-
-/* Make the hamburger dropdown links reliably visible */
-.greedy-nav .hidden-links { min-width: 150px; }
-.greedy-nav .hidden-links li {
-  display: block !important;
-  visibility: visible !important;
-  border-bottom: 1px solid var(--global-border-color);
-}
-.greedy-nav .hidden-links li:last-child { border-bottom: none; }
-.greedy-nav .hidden-links a {
-  display: block !important;
-  visibility: visible !important;
-  color: #2b2b2b !important;
-  padding: 10px 20px !important;
-  font-size: 1em;
-  white-space: nowrap;
-}
 
 /* Institution logos: their own centered block below the profile */
 .author__institution { clear: both; text-align: center; margin-top: 1.25em; }
 
-@media (max-width: 57.8125em) {
-  /* Show the hamburger on small screens */
-  .greedy-nav > button { display: block; }
+/* Hidden by default (desktop): checkbox, hamburger label, mobile menu, legacy button */
+.nav-toggle { position: absolute; opacity: 0; width: 1px; height: 1px; pointer-events: none; }
+.nav-toggle-btn { display: none; }
+.greedy-nav .mobile-menu { display: none; }
+.greedy-nav > button { display: none; }
 
-  /* The inline nav links live in the dropdown here; hide them from the bar */
+@media (max-width: 57.8125em) {
+  /* Hamburger label at top-right */
+  .nav-toggle-btn {
+    display: inline-flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 0.7rem;
+    padding: 0.4rem 0.2rem;
+    cursor: pointer;
+    z-index: 30;
+  }
+
+  /* Hide the inline nav links; reached through the dropdown instead */
   .greedy-nav .visible-links li:not(.persist) { display: none; }
+
+  /* Dropdown revealed by the checkbox */
+  .nav-toggle:checked ~ .mobile-menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 10px;
+    padding: 5px;
+    min-width: 175px;
+    background: var(--global-bg-color);
+    border: 1px solid var(--global-border-color);
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    z-index: 30;
+    list-style: none;
+  }
+  .greedy-nav .mobile-menu li {
+    display: block;
+    border-bottom: 1px solid var(--global-border-color);
+  }
+  .greedy-nav .mobile-menu li:last-child { border-bottom: none; }
+  .greedy-nav .mobile-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: #2b2b2b !important;
+    white-space: nowrap;
+    text-decoration: none;
+  }
+  .greedy-nav .mobile-menu a:hover { color: #9a5b3f !important; }
+
+  /* Hamburger turns into an X when open */
+  .nav-toggle:checked ~ .nav-toggle-btn .navicon { background: transparent; }
+  .nav-toggle:checked ~ .nav-toggle-btn .navicon:before { transform: rotate(45deg); top: 0; }
+  .nav-toggle:checked ~ .nav-toggle-btn .navicon:after { transform: rotate(-45deg); top: 0; }
 
   /* Keep the bar in normal flow so it never covers the profile photo/name */
   .masthead { position: static !important; }
