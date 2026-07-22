@@ -144,10 +144,9 @@ p.author__pronouns,
 
 /* =============================================
    Navigation & sidebar behaviour (mobile)
-   The collapsible menu (hamburger) and the "Follow" dropdown are driven
-   by JS in _includes/scripts.html. These rules show the hamburger on
-   small screens, reveal the dropdown when toggled, keep the bar in
-   normal flow (so it never covers the profile), and keep the logos tidy.
+   The hamburger menu and the "Follow" dropdown are driven by JS in
+   /assets/js/site-nav.js. On small screens the inline nav links are
+   hidden and reached through the hamburger dropdown instead.
    ============================================= */
 
 /* Overflow toggle (hamburger): hidden on desktop */
@@ -156,12 +155,32 @@ p.author__pronouns,
 /* "Follow" dropdown (author links) */
 .author__urls.is--visible { display: block; z-index: 100; }
 
+/* Make the hamburger dropdown links reliably visible */
+.greedy-nav .hidden-links { min-width: 150px; }
+.greedy-nav .hidden-links li {
+  display: block !important;
+  visibility: visible !important;
+  border-bottom: 1px solid var(--global-border-color);
+}
+.greedy-nav .hidden-links li:last-child { border-bottom: none; }
+.greedy-nav .hidden-links a {
+  display: block !important;
+  visibility: visible !important;
+  color: #2b2b2b !important;
+  padding: 10px 20px !important;
+  font-size: 1em;
+  white-space: nowrap;
+}
+
 /* Institution logos: their own centered block below the profile */
 .author__institution { clear: both; text-align: center; margin-top: 1.25em; }
 
 @media (max-width: 57.8125em) {
   /* Show the hamburger on small screens */
   .greedy-nav > button { display: block; }
+
+  /* The inline nav links live in the dropdown here; hide them from the bar */
+  .greedy-nav .visible-links li:not(.persist) { display: none; }
 
   /* Keep the bar in normal flow so it never covers the profile photo/name */
   .masthead { position: static !important; }
