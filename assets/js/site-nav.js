@@ -16,7 +16,9 @@
       });
     }
 
-    /* Collapsible menu (hamburger) */
+    /* Collapsible menu (hamburger). The CSS hides the inline links on small
+       screens; here we copy them into the dropdown so the button can reveal
+       them. Copying (not moving) keeps the desktop layout untouched. */
     var nav = document.querySelector('#site-nav.greedy-nav');
     if (!nav) { return; }
     var vlinks = nav.querySelector('.visible-links');
@@ -24,48 +26,15 @@
     var btn = nav.querySelector('button');
     if (!vlinks || !hlinks || !btn) { return; }
 
-    var movable = [];
     Array.prototype.forEach.call(vlinks.children, function (li) {
-      if (!li.classList.contains('persist')) { movable.push(li); }
-    });
-
-    function tailRef() {
-      for (var i = 1; i < vlinks.children.length; i++) {
-        if (vlinks.children[i].classList.contains('persist')) { return vlinks.children[i]; }
+      if (!li.classList.contains('persist')) {
+        hlinks.appendChild(li.cloneNode(true));
       }
-      return null;
-    }
-
-    var MOBILE = 925;
-    var collapsed = null;
-
-    function collapse() {
-      if (collapsed === true) { return; }
-      movable.forEach(function (li) { hlinks.appendChild(li); });
-      collapsed = true;
-    }
-    function expand() {
-      if (collapsed === false) { return; }
-      var ref = tailRef();
-      movable.forEach(function (li) { vlinks.insertBefore(li, ref); });
-      hlinks.classList.add('hidden');
-      btn.classList.remove('close');
-      collapsed = false;
-    }
-    function sync() {
-      if (window.innerWidth <= MOBILE) { collapse(); } else { expand(); }
-    }
+    });
 
     btn.addEventListener('click', function () {
       hlinks.classList.toggle('hidden');
       btn.classList.toggle('close');
-    });
-
-    sync();
-    var t;
-    window.addEventListener('resize', function () {
-      clearTimeout(t);
-      t = setTimeout(sync, 150);
     });
   });
 })();
