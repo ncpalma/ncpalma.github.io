@@ -170,7 +170,7 @@ p.author__pronouns,
     top: 0.7rem;
     padding: 0.4rem 0.2rem;
     cursor: pointer;
-    z-index: 30;
+    z-index: 10001;
   }
 
   /* Hide the inline nav links; reached through the dropdown instead */
@@ -189,7 +189,7 @@ p.author__pronouns,
     border: 1px solid var(--global-border-color);
     border-radius: 4px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-    z-index: 30;
+    z-index: 10000;
     list-style: none;
   }
   .greedy-nav .mobile-menu li {
@@ -211,8 +211,20 @@ p.author__pronouns,
   .nav-toggle:checked ~ .nav-toggle-btn .navicon:before { transform: rotate(45deg); top: 0; }
   .nav-toggle:checked ~ .nav-toggle-btn .navicon:after { transform: rotate(-45deg); top: 0; }
 
-  /* Keep the bar in normal flow so it never covers the profile photo/name */
-  .masthead { position: static !important; }
+  /* Keep the bar in normal flow so it never covers the profile photo/name.
+     NOTE: it must be `relative` (positioned) and NOT `static`. The theme applies
+     an `intro` opacity animation to .masthead; on a static element that animation
+     makes the masthead its own stacking context, which traps the dropdown behind
+     the profile card and the institution logos on mobile Safari. */
+  .masthead {
+    position: relative !important;
+    z-index: 9999 !important;
+    -webkit-animation: none !important;
+    animation: none !important;
+  }
+  .masthead__inner-wrap { overflow: visible !important; }
+  #site-nav { position: relative; z-index: 9999; }
+  .author__urls-wrapper { z-index: 1 !important; }
   #main { margin-top: 1em; }
 
   /* Keep the logos modest so they don't crowd the profile */
