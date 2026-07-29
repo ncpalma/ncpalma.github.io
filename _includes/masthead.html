@@ -5,13 +5,18 @@
 #site-nav .mobile-menu{display:none;}
 #site-nav > button{display:none;}
 @media (max-width:57.8125em){
-  .masthead{position:static !important;}
+  /* The masthead must be a POSITIONED element with a high z-index, otherwise the
+     `intro` opacity animation turns it into its own stacking context and the
+     dropdown gets painted underneath the profile card / logos on iOS Safari. */
+  .masthead{position:relative !important;z-index:9999 !important;-webkit-animation:none !important;animation:none !important;}
+  .masthead__inner-wrap{overflow:visible !important;}
   .sidebar{-webkit-transform:none !important;transform:none !important;}
-  #site-nav{position:relative;z-index:1000;-webkit-transform:translateZ(0);transform:translateZ(0);isolation:isolate;}
+  .author__urls-wrapper{z-index:1 !important;}
+  #site-nav{position:relative;z-index:9999;}
   #main{margin-top:1em;}
-  .nav-toggle-btn{display:inline-flex;align-items:center;position:absolute;right:0;top:0.7rem;padding:0.4rem 0.2rem;cursor:pointer;z-index:1001;}
+  .nav-toggle-btn{display:inline-flex;align-items:center;position:absolute;right:0;top:0.7rem;padding:0.4rem 0.2rem;cursor:pointer;z-index:10001;}
   #site-nav .visible-links li:not(.persist){display:none;}
-  #site-nav .nav-toggle:checked ~ .mobile-menu{display:block;position:absolute;top:100%;right:0;margin-top:10px;padding:5px;min-width:175px;background:#faf8f5;border:1px solid #ece7e0;border-radius:4px;box-shadow:0 0 10px rgba(0,0,0,0.25);z-index:1001;list-style:none;}
+  #site-nav .nav-toggle:checked ~ .mobile-menu{display:block;position:absolute;top:100%;right:0;margin-top:10px;padding:5px;min-width:175px;background:#faf8f5;border:1px solid #ece7e0;border-radius:4px;box-shadow:0 0 10px rgba(0,0,0,0.25);z-index:10000;list-style:none;}
   #site-nav .mobile-menu li{display:block;border-bottom:1px solid #ece7e0;}
   #site-nav .mobile-menu li:last-child{border-bottom:none;}
   #site-nav .mobile-menu a{display:block;padding:10px 20px;color:#2b2b2b !important;white-space:nowrap;text-decoration:none;}
